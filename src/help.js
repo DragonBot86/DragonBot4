@@ -6,7 +6,6 @@ const help = (prefix) => {
 ◉ *INFORMACION*
    ○ Comando: ⌜ ${prefix} ⌟
    ○ Creador: Ochoa™ 
-   Comandos usados hoy : ${hit_today.length}
  
 
 ◉ *COMUNICADO*
