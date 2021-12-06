@@ -71,7 +71,7 @@ const { welmenu } = require('./src/welmenu')
 const { banmenu } = require('./src/banmenu')
 const { otak } = require('./src/otak')
 const { levelmenu } = require('./src/levelmenu')
-const { validmove, setGame } = require("./lib/tictactoe");
+const { validmove, setGame } = require("./lib/tictactoe.js");
 /******FIN DE ENTRADA DEL MENÚ******/
 
 /******CARGA DE ENTRADA VCARD******/
