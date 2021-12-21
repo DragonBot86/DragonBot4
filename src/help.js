@@ -9,10 +9,9 @@ const help = (prefix) => {
  
 
 ◉ *COMUNICADO*
-Vale Vrga XDXD
+El Hidetag Aveces Falla xd
 
-Unete Y Hacemos La Amigacion: https://chat.whatsapp.com/ESSNj94ibMl9qh4A2J1L86
-
+Unete Y Hacemos La Amigacion: https://chat.whatsapp.com/BTC7b3Kf9uJGGeAaPjpOxr
 ◉ *PARA USAR EL BOT*
 Registrate con el comando ${prefix}daftar y tu nombre
 
