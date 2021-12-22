@@ -749,7 +749,7 @@ boardnow.O + "@s.whatsapp.net",
 });
 return;
 }
-if (argss.length === 1)
+if (client.length === 1)
 return reply(
 `Etiqueta a quien quieras que sea ser tu oponente!\n\nEjemplo : ${prefix}ttt <@tag>`
 );
@@ -772,7 +772,7 @@ const strChat = `🎮 Iniciar el juego tictactoe 🎳
 client.sendMessage(from, strChat, MessageType.text, {
 quoted: ftoko,
 contextInfo: {
-mentionedJid: [sender, argss[1].replace("@", "") + "@s.whatsapp.net"],
+mentionedJid: [sender, client[1].replace("@", "") + "@s.whatsapp.net"],
 },
 });
 break
