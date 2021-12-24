@@ -9,9 +9,9 @@ const help = (prefix) => {
  
 
 ◉ *COMUNICADO*
-El Hidetag Aveces Falla xd
+Cambio El Hidetag, Pregunta El Nuevo Comando A Ochoa
 
-Unete Y Hacemos La Amigacion: https://chat.whatsapp.com/BTC7b3Kf9uJGGeAaPjpOxr
+Unete Y Hacemos La Amigacion: https://chat.whatsapp.com/E1JHilxrcRBLpyMirqTTGT
 ◉ *PARA USAR EL BOT*
 Registrate con el comando ${prefix}daftar y tu nombre
 
