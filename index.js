@@ -30,21 +30,21 @@ const  { fetchJson }  =  require ( './lib/fetcher' )
 const  { reconocer }  =  require ( './lib/ocr' )
 /****** FIN DE ENTRADA DE ARCHIVO ******/
 
-/****** COMIENZO DE LA ENTRADA DEL PAQUETE NPM ******/
-const  fs  =  require ( 'fs' )
- momento  constante =  require ( 'momento-zona horaria' )
-const  { exec }  =  require ( 'child_process' )
-const  kagApi  =  require ( '@ kagchi / kag-api' )
-const  axios  =  require ( "axios" )
-const  fetch  =  require ( 'búsqueda de nodo' )
-/ * const tiktod = require ('tiktok-scraper') * /
-const  ffmpeg  =  require ( 'fluido-ffmpeg' )
-const  { removeBackgroundFromImageFile }  =  require ( 'remove.bg' )
-/ * const imgbb = require ('imgbb-uploader') * /
-const  lolis  =  require ( 'lolis.life' )
-const  loli  =  nuevo  lolis ( )
- velocidad  constante =  require ( 'rendimiento-ahora' )
-/****** FIN DE ENTRADA DEL PAQUETE NPM ******/
+//******COMIENZO DE LA ENTRADA DEL PAQUETE NPM******/
+const fs = require('fs')
+const moment = require('moment-timezone')
+const { exec } = require('child_process')
+const kagApi = require('@kagchi/kag-api')
+const axios = require("axios")
+const fetch = require('node-fetch')
+/*const tiktod = require('tiktok-scraper')*/
+const ffmpeg = require('fluent-ffmpeg')
+const { removeBackgroundFromImageFile } = require('remove.bg')
+/*const imgbb = require('imgbb-uploader')*/
+const lolis = require('lolis.life')
+const loli = new lolis()
+const speed = require('performance-now')
+/******FIN DE ENTRADA DEL PAQUETE NPM******/
 
 /****** COMIENZO DE LA ENTRADA JSON ******/
 const  welkom  =  JSON . analizar ( fs . readFileSync ( './database/json/welkom.json' ) )
