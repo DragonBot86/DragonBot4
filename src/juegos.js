@@ -11,6 +11,9 @@ Conoce que tan gay eres 😎
 ${prefix}cuties
 Prueba tu suerte en el medidor de fan de cuties 😱
 
+${prefix}racista
+Conoce que tan racista eres
+
 _*Pronto Agregare El ttt*_
      
 _*by Ochoa*_
