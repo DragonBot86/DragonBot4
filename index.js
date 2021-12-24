@@ -20,7 +20,7 @@ const  {
     GroupSettingChange
 }  =  require ( '@ adiwajshing / baileys' )
 
-/ ****** COMIENZO DE LA ENTRADA DEL ARCHIVO ****** /
+/****** COMIENZO DE LA ENTRADA DEL ARCHIVO ******/
 const  { color , bgcolor }  =  require ( './lib/color' )
 const  { bahasa }  =  require ( './src/bahasa' )
 const  { negara }  =  require ( './src/kodenegara' )
@@ -28,9 +28,9 @@ const  { virtex }  =  require ( './src/virtex' )
 const  { espera , pegatinas , musica , simih , getBuffer , h2k , generateMessageID , getGroupAdmins , getRandom , banner , start , info , success , close }  =  require ( './lib/functions' )
 const  { fetchJson }  =  require ( './lib/fetcher' )
 const  { reconocer }  =  require ( './lib/ocr' )
-/ ****** FIN DE ENTRADA DE ARCHIVO ****** /
+/****** FIN DE ENTRADA DE ARCHIVO ******/
 
-/ ****** COMIENZO DE LA ENTRADA DEL PAQUETE NPM ****** /
+/****** COMIENZO DE LA ENTRADA DEL PAQUETE NPM ******/
 const  fs  =  require ( 'fs' )
  momento  constante =  require ( 'momento-zona horaria' )
 const  { exec }  =  require ( 'child_process' )
@@ -44,9 +44,9 @@ const  { removeBackgroundFromImageFile }  =  require ( 'remove.bg' )
 const  lolis  =  require ( 'lolis.life' )
 const  loli  =  nuevo  lolis ( )
  velocidad  constante =  require ( 'rendimiento-ahora' )
-/ ****** FIN DE ENTRADA DEL PAQUETE NPM ****** /
+/****** FIN DE ENTRADA DEL PAQUETE NPM ******/
 
-/ ****** COMIENZO DE LA ENTRADA JSON ****** /
+/****** COMIENZO DE LA ENTRADA JSON ******/
 const  welkom  =  JSON . analizar ( fs . readFileSync ( './database/json/welkom.json' ) )
 const  nsfw  =  JSON . analizar ( fs . readFileSync ( './database/json/nsfw.json' ) )
 const  ban  =  JSON . analizar ( fs . readFileSync ( './database/banned.json' ) )
@@ -55,9 +55,9 @@ const  samih  =  JSON . analizar ( fs . readFileSync ( './database/json/simi.jso
  usuario  constante =  JSON . analizar ( fs . readFileSync ( './database/json/user.json' ) )
 const  _leveling  =  JSON . analizar ( fs . readFileSync ( './database/json/leveling.json' ) )
 const  _level  =  JSON . analizar ( fs . readFileSync ( './database/json/level.json' ) )
-/ ****** FIN DE ENTRADA JSON ****** /
+/****** FIN DE ENTRADA JSON ******/
 
-/ ****** INICIO DE LA ENTRADA DEL MENÚ ****** /
+/****** INICIO DE LA ENTRADA DEL MENÚ ******/
 const  { ayuda }  =  require ( './src/help' )
 const  { logomaker }  =  require ( './database/menu/logomaker' )
 const  { toinmenu }  =  require ( './src/toinmenu' )
