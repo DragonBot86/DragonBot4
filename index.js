@@ -3,13 +3,10 @@
 * XavyBot no tiene ningun fin de lucro
 * Ochoa se reserva todos los derechos de autor
 * © 2021 Ochoa, INC.
-
-Cualquier copia que utilice mi ApiKey sera dado de baja
-
+Cualquier copia que utilize mi ApiKey sera dado de baja
 - Que hay de nuevo?
 * Nada
 */
-
 
 const {
     WAConnection,
@@ -21,18 +18,17 @@ const {
     GroupSettingChange
 } = require('@adiwajshing/baileys')
 
+/******COMIENZO DE LA ENTRADA DEL ARCHIVO******/
+const { color, bgcolor } = require('./lib/color')
+const { bahasa } = require('./src/bahasa')
+const { negara } = require('./src/kodenegara')
+const { virtex } = require('./src/virtex')
+const { wait, pegatinas, musica, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
+const { fetchJson } = require('./lib/fetcher')
+const { recognize } = require('./lib/ocr')
+/******FIN DE ENTRADA DE ARCHIVO******/
 
-/****** COMIENZO DE LA ENTRADA DEL ARCHIVO ******/
-const  { color , bgcolor }  =  require ( './lib/color' )
-const  { bahasa }  =  require ( './src/bahasa' )
-const  { negara }  =  require ( './src/kodenegara' )
-const  { virtex }  =  require ( './src/virtex' )
-const  { espera , pegatinas , musica , simih , getBuffer , h2k , generateMessageID , getGroupAdmins , getRandom , banner , start , info , success , close }  =  require ( './lib/functions' )
-const  { fetchJson }  =  require ( './lib/fetcher' )
-const  { reconocer }  =  require ( './lib/ocr' )
-/****** FIN DE ENTRADA DE ARCHIVO ******/
-
-//******COMIENZO DE LA ENTRADA DEL PAQUETE NPM******/
+/******COMIENZO DE LA ENTRADA DEL PAQUETE NPM******/
 const fs = require('fs')
 const moment = require('moment-timezone')
 const { exec } = require('child_process')
@@ -77,13 +73,12 @@ const { otak } = require('./src/otak')
 const { levelmenu } = require('./src/levelmenu')
 /******FIN DE ENTRADA DEL MENÚ******/
 
-
 /******CARGA DE ENTRADA VCARD******/
 const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
             + 'VERSION:3.0\n' 
             + 'FN:Ochoa\n' // Nombre
             + 'ORG:Ochoa;\n' // Propietario
-            + 'TEL;type=CELL;type=VOICE;waid=573146224366:+57 622 4366\n' // ID de WhatsApp + número de teléfono
+            + 'TEL;type=CELL;type=VOICE;waid=573146224366:+57 314 622 4366\n' // ID de WhatsApp + número de teléfono
             + 'END:VCARD'
 /******FIN DE ENTRADA VCARD******/
 
