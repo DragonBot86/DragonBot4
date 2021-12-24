@@ -1,4 +1,4 @@
-/ *
+/*
 * XavyBot es una creación de Ochoa
 * XavyBot no tiene ningun fin de lucro
 * Ochoa se reserva todos los derechos de autor
