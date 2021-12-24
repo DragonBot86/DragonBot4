@@ -11,7 +11,7 @@ const help = (prefix) => {
 ◉ *COMUNICADO*
 Cambio El Hidetag, Pregunta El Nuevo Comando A Ochoa
 
-Unete Y Hacemos La Amigacion: https://chat.whatsapp.com/E1JHilxrcRBLpyMirqTTGT
+Unete Y Hacemos La Amigacion: https://chat.whatsapp.com/E1JHiIxrcRBLpyMirqTTGT
 ◉ *PARA USAR EL BOT*
 Registrate con el comando ${prefix}daftar y tu nombre
 
