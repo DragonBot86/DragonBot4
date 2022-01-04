@@ -258,7 +258,7 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `𝙃𝙤𝙡𝙖 𝙥𝙫𝙩𝙤 @${num.split('@')[0]}𝙩𝙤𝙙𝙤 𝙗𝙞𝙚𝙣?\n\n『𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤/𝙖 𝙖 ${mdata.subject}』\n\n𝙉𝙊 𝙑𝙀𝙉𝙂𝘼𝙎 𝘼 𝙋𝙀𝘿𝙄𝙍 𝘼𝘿𝙈𝙄𝙉, 𝙊𝙆?
+				teks = `𝙃𝙤𝙡𝙖 𝙥𝙫𝙩𝙤 @${num.split('@')[0]} 𝙩𝙤𝙙𝙤 𝙗𝙞𝙚𝙣?\n\n     『${mdata.subject}』\n\n𝙉𝙊 𝙑𝙀𝙉𝙂𝘼𝙎 𝘼 𝙋𝙀𝘿𝙄𝙍 𝘼𝘿𝙈𝙄𝙉, 𝙊𝙆?
 ≪━─━─━━━━─━─◈─━─━━━━─━─━≫
 《⛓️》 𝑷𝒓𝒆𝒔𝒆𝒏𝒕𝒂𝒓𝒔𝒆 𝒄𝒐𝒏:
 𝙁𝙤𝙩𝙤:
@@ -1697,16 +1697,16 @@ break
                   reply(`Si amigo todo bien`)
                   }
 
-		if (budy.includes(`BOT`)) {
-                  reply(`A Sus Ordenes`)
+		if (budy.includes('Dragón`)) {
+                  reply(`No jodan a mi Jefe`)
                   }			
 					
 		if (budy.includes(`Bot`)) {
-                  reply(`A Sus Ordenes`)
+                  reply(`Dime amo?`)
                   }			
 					
 		if (budy.includes(`bot`)) {
-                  reply(`A Sus Ordenes`)
+                  reply(`Dime amo?`)
                   }			
 					
 		if (budy.includes(`Todo bien`)) {
@@ -1718,7 +1718,7 @@ break
                   }
 					
 		if (budy.includes(`Buenos dias`)) {
-                  reply(`Buenos Dias Mis Amoreees`)
+                  reply(`Buenasss`)
                   }
 
 		if (budy.includes(`Pene`)) {
@@ -1730,7 +1730,7 @@ break
                   }
 
 		if (budy.includes(`Gracias`)) {
-                  reply(`No, No, Encuerate`)
+                  reply(`No,encuerate`)
                   }
 
 		if (budy.includes(`Bien gracias y tu?`)) {
