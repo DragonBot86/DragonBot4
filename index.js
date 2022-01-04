@@ -1,8 +1,8 @@
 /*
-* XavyBot es una creación de Ochoa
-* XavyBot no tiene ningun fin de lucro
-* Ochoa se reserva todos los derechos de autor
-* © 2021 Ochoa, INC.
+* DragonBot es una creación de Dragon
+* DragonBot no tiene ningun fin de lucro
+* Dragon se reserva todos los derechos de autor
+* © 2021 Dragon, INC.
 Cualquier copia que utilize mi ApiKey sera dado de baja
 - Que hay de nuevo?
 * Nada
@@ -76,9 +76,9 @@ const { levelmenu } = require('./src/levelmenu')
 /******CARGA DE ENTRADA VCARD******/
 const vcard = 'BEGIN:VCARD\n' // Tarjeta de contacto
             + 'VERSION:3.0\n' 
-            + 'FN:Ochoa\n' // Nombre
-            + 'ORG:Ochoa;\n' // Propietario
-            + 'TEL;type=CELL;type=VOICE;waid=573146224366:+57 314 622 4366\n' // ID de WhatsApp + número de teléfono
+            + 'FN:Dragon\n' // Nombre
+            + 'ORG:Dragón;\n' // Propietario
+            + 'TEL;type=CELL;type=VOICE;waid=972524588528:+972 52-458-8528\n' // ID de WhatsApp + número de teléfono
             + 'END:VCARD'
 /******FIN DE ENTRADA VCARD******/
 
@@ -95,7 +95,7 @@ const {
 
 /******INICIO DE FUNCIONES ENTRADA******/
 
-/******ARCHIVOS ANTILINK POR OCHOA******/
+/******ARCHIVOS ANTILINK POR DRAGÓN******/
 
 const antilink = JSON.parse(fs.readFileSync('./src/antilink.json'))
 const antiface = JSON.parse(fs.readFileSync('./src/antiface.json'))
@@ -105,7 +105,7 @@ const antikwai = JSON.parse(fs.readFileSync('./src/antikwai.json'))
 const antiwa = JSON.parse(fs.readFileSync('./src/antiwa.json'))
 const antidiscord = JSON.parse(fs.readFileSync('./src/antidiscord.json'))
 
-/******FIN DE ARCHIVOS ANTILINK POR OCHOA******/
+/******FIN DE ARCHIVOS ANTILINK POR DRAGÓN******/
 
 
 //LEVEL INICIO
@@ -179,7 +179,7 @@ const getLevelingXp = (userId) => {
 //LEVEL FIN
 	
 function addMetadata(packname, author) {	
-	if (!packname) packname = 'XavyBot'; if (!author) author = 'Ochoa';	
+	if (!packname) packname = 'DragonBot'; if (!author) author = 'Dragon';	
 	author = author.replace(/[^a-zA-Z0-9]/g, '');	
 	let name = `${author}_${packname}`
 	if (fs.existsSync(`./${name}.exif`)) return `./${name}.exif`
@@ -246,7 +246,7 @@ async function starts() {
 		start('2', 'Estas desconectado')
 	})
 	client.on('open', () => {
-		success('2', 'Conectado by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶')
+		success('2', 'Conectado Dragon⁶⁶⁶')
 	})
 	await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./Nazwa.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
@@ -258,11 +258,18 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `HOLA GUAPA * LA NALGUEA* @${num.split('@')[0]} ¿COMO ESTAS? APARTE DE GUAPA\n\n『BIENVENIDOS A ESTA MIERDA LLAMADA *${mdata.subject}*』\n\nLEE LAS REGLAS OE\n\n_RESPETA A LOS ADMINS Y HAZME ZING :D_\n\n*TOY TRISTE, ME MANDAS PACK Y NOBIAMOS*`
+				teks = `𝙃𝙤𝙡𝙖 𝙥𝙫𝙩𝙤 @${num.split('@')[0]}𝙩𝙤𝙙𝙤 𝙗𝙞𝙚𝙣?\n\n『𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤/𝙖 𝙖 ${mdata.subject}』\n\n𝙉𝙊 𝙑𝙀𝙉𝙂𝘼𝙎 𝘼 𝙋𝙀𝘿𝙄𝙍 𝘼𝘿𝙈𝙄𝙉, 𝙊𝙆?
+≪━─━─━━━━─━─◈─━─━━━━─━─━≫
+《⛓️》 𝑷𝒓𝒆𝒔𝒆𝒏𝒕𝒂𝒓𝒔𝒆 𝒄𝒐𝒏:
+𝙁𝙤𝙩𝙤:
+𝙉𝙤𝙢𝙗𝙧𝙚:
+𝙀𝙙𝙖𝙙:
+𝙋𝙖𝙞𝙨:《⛓️》
+\n\n🍒𝙍𝙚𝙨𝙥𝙚𝙩𝙖 𝙖 𝙡𝙤𝙨 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙙𝙤𝙧𝙚𝙨\n\n𝘽𝙮 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Bueno, se fue @${num.split('@')[0]}\n\nUNA PUTA MENOS PA CUIDAR`
+				teks = `Bueno, se fue @${num.split('@')[0]}\n\nUna pvta menos`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -301,12 +308,12 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: 'Calmao pa estoy procesando😎\n\n❗Por favor no hacer spam👏❗\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
+				wait: 'Calmao pa estoy procesando😎\n\n❗Por favor no hacer spam👏❗\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
 				success: '✔️ Listo ✔️',
                                 levelon: '❬ ✅ ❭ *Level activado*',
 				leveloff: ' ❬ ✅ ❭  *Level desactivado*',
-				foto: 'Calmao estoy cambiando la foto del grupo\n\nPor favor no hacer spam👏\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-				unir: 'Espere por favor 🕖\n\nEstoy tratando de unirlo\n\n*Recuerda, si no lo uno es por que el usuario tiene bloqueado la funcion para unirlo a grupos*\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
+				foto: 'Calmao estoy cambiando la foto del grupo\n\nPor favor no hacer spam👏\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
+				unir: 'Espere por favor 🕖\n\nEstoy tratando de unirlo\n\n*Recuerda, si no lo uno es por que el usuario tiene bloqueado la funcion para unirlo a grupos*\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
                                 levelnoton: '❬ ❎ ❭ *Level no esta activado*',
 				levelnol: '*Nivel* 0 ',
 				error: {
@@ -319,25 +326,25 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando es solo para grupos',
 					ownerG: '[❗] Este comando solo puede ser utilizado por un admins del grupo',
-					ownerB: '[❗] Este comando solo lo usa 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶',
+					ownerB: '[❗] Este comando solo lo usa 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
 					admin: '[❗] Este comando solo puede ser utilizado por administradores del grupo',
 					Badmin: '[❗] Este comando solo se puede usar cuando el bot se convierte en administrador',
-                                        pegatina: 'Calma crack estoy haciendo tu sticker 👏\n\n*Recuerda los stickersgif son de 6 segundos*\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-					attp: 'Calma crack estoy haciendo tu texto a sticker 👏\n\n*Esto puede demorar unos minutos*\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-					imgs: 'Euu flaco 🥴\n\n*Convirtiendo tu Sticker a Imagen 🔄*\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-					mpcancion: 'Calmaoooo estoy procesando 😎\n\n*Convirtiendo de MP4 a MP3 🔄*\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-					mpa: 'Euu flaco 🥴\n\n*Estoy descargando tu cancion 🔄*\n\nAguarde un momento, por favor\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-                                        mpv: 'Calma ✋🥸🤚\n\n*Estoy descargando tu video 🔄*\n\nAguarde un momento, por favor\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-					insta: 'Calmao 😎\n\n*Estoy descargando tu post 🔄*\n\nAguarde un momento, por favor\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-					musica: 'Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando !play no funciona utiliza el comando !play2*\n\nSi no envio tu musica checa que version tienes del bot con !version\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-					musica2: 'Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando !play2 no funciona utiliza el comando !play*\n\nSi no envio tu musica checa que version tienes del bot con !version\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',
-					daftarB: `「NO ESTAS REGISTRADO」\n\nALTO PUTA, QUIEN SOS Y PORQUE NO ESTAS REGISTRADO\n\nPara poder usarme escribe el siguente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶`,
+                                        pegatina: 'Calma crack estoy haciendo tu sticker 👏\n\n*Recuerda los stickersgif son de 6 segundos*\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
+					attp: 'Calma crack estoy haciendo tu texto a sticker 👏\n\n*Esto puede demorar unos minutos*\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
+					imgs: 'Euu flaco 🥴\n\n*Convirtiendo tu Sticker a Imagen 🔄*\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
+					mpcancion: 'Calmaoooo estoy procesando 😎\n\n*Convirtiendo de MP4 a MP3 🔄*\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
+					mpa: 'Euu flaco 🥴\n\n*Estoy descargando tu cancion 🔄*\n\nAguarde un momento, por favor\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩⁩⁩',
+                                        mpv: 'Calma ✋🥸🤚\n\n*Estoy descargando tu video 🔄*\n\nAguarde un momento, por favor\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
+					insta: 'Calmao 😎\n\n*Estoy descargando tu post 🔄*\n\nAguarde un momento, por favor\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
+					musica: 'Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando !play no funciona utiliza el comando !play2*\n\nSi no envio tu musica checa que version tienes del bot con !version\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
+					musica2: 'Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube*\n\n*Si el comando !play2 no funciona utiliza el comando !play*\n\nSi no envio tu musica checa que version tienes del bot con !version\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',
+					daftarB: `「NO ESTAS REGISTRADO」\n\n🍒REGISTRATE PVTA\n\nPara poder usarme escribe el siguiente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩`,
 				}
 			}
     			const apakah = ['Si','No']
                         const kapankah = ['Otro día','Otra semana','Otro mes','Otro año']
 			const botNumber = client.user.jid
-			const ownerNumber = ["573146224366@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["972524588528@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 	                const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -363,7 +370,7 @@ async function starts() {
 			const isOwner = ownerNumber.includes(sender)
                         const isUser = user.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '573146224366@s.whatsapp.net'
+                        const NomerOwner = '972524588528@s.whatsapp.net'
                         const conts = mek.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
                         const pushname = mek.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
 			
@@ -581,7 +588,7 @@ if (budy.includes("https://m.facebook.com/")){
 
 /******ENTRADA FIN DE FUNCIONES******/
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'XavyBot'; if (!author) author = 'Ochoa';	
+				if (!packname) packname = 'DragonBot'; if (!author) author = 'Dragon';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
@@ -712,7 +719,7 @@ break
 //FIN DE FUNCIONES BAN Y DESBAN					
 					
 					
-/******JUEGOS OCHOA LA PUTA MADRE NO TE OLVIDES******/
+/******JUEGOS DRAGON LA PUTA MADRE NO TE OLVIDES******/
 					
 case 'gay':
 if (!isUser) return reply(mess.only.daftarB)
@@ -765,7 +772,7 @@ reply('Hubo un error intentalo nuevamente :/')
 }
 break				
 											
-/******JUEGOS OCHOA LA PUTA MADRE NO TE OLVIDES******/					
+/******JUEGOS DRAGÓN LA PUTA MADRE NO TE OLVIDES******/					
 					
 					
        				case 'wa.me':
@@ -783,8 +790,8 @@ break
 		
 	
 	case 'creador':
-	       client.sendMessage(from, {displayname: "𝑶𝒄𝒉𝒐𝒂⁶⁶⁶", vcard: vcard}, MessageType.contact, { quoted: mek})
-		client.sendMessage(from, 'Hola 👋 te saluda Ochoa, este es un mensaje predeterminado al igual que el audio.\n\nArriba esta mi contacto por si tienen algun problema con las descargas o yo que se.\nYo soy dueño de este bot y lo controlo, yo cree la base de datos y le doy mantenimiento.\nEl numero osea mi contacto de arriba no es un bot, si te dio pereza escuchar el audio gordito trolo.\nBueno disfruten del bot.\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_',MessageType.text, { quoted: mek} )
+	       client.sendMessage(from, {displayname: "𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩", vcard: vcard}, MessageType.contact, { quoted: mek})
+		client.sendMessage(from, 'Hola 👋 te saluda Dragón, este es un mensaje predeterminado\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩',MessageType.text, { quoted: mek} )
                  break
 	
 	
@@ -890,7 +897,7 @@ break
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 *MENCIONANDO PUTAS* 〙✪══\n╠➥'+teks+'╚═〘 _*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_ 〙', members_id, true)
+					mentions('╔══✪〘 *MENCIONANDO PUTAS* 〙✪══\n╠➥'+teks+'╚═〘 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩', members_id, true)
 					break
                                 case 'send':
 					var pc = body.slice(6)
@@ -921,7 +928,7 @@ break
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 _*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_ 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩\n\n${body.slice(4)}`)
 						}
 						reply('Transmisión exitosa')
 					}
@@ -949,7 +956,7 @@ break
 		
                                        
 				
-			//ANTILINKS DE REDES SOCIALES FLACO ACEPTALO SOLO LO ESTAS EDITANDO REALMENTE OCHOA TE HIZO TODO ESTO	
+			//ANTILINKS DE REDES SOCIALES FLACO ACEPTALO SOLO LO ESTAS EDITANDO REALMENTE DRAGON TE HIZO TODO ESTO	
 				
 				case 'antiwa':
                                         if (!isGroup) return reply(mess.only.group)
@@ -1101,7 +1108,7 @@ break
 					break
 			        
 				
-				//FIN DE ANTILINK HECHO POR OCHOA
+				//FIN DE ANTILINK HECHO POR DRAGÓN
 				
 //ADMINISTRACION DE GRUPOS
 		                
@@ -1394,7 +1401,7 @@ break
 						fs.unlinkSync(media)
 						if (err) return reply('❌ No se pudo convertir el sticker en imágenes')
 						buffer = fs.readFileSync(ran)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: '*⌈ Imagen convertida ✅ ⌉*\n\n_*by 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: '*⌈ Imagen convertida ✅ ⌉*\n\nby 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩'})
 						fs.unlinkSync(ran)
 					})
 					break
@@ -1426,7 +1433,7 @@ break
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.me/api/ytplaymp3?q=${play}&apikey=23hamilton`)
                 if (anu.error) return reply(anu.error)
-                infomp3 = `*⌜Cancion Encontrada ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP3 ⚠*\n\n_*Servicio proveido por 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_`
+                infomp3 = `*⌜Cancion Encontrada ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP3 ⚠*\n\n_*Servicio proveido por 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -1440,7 +1447,7 @@ break
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.me/api/ytplaymp3?q=${play}&apikey=23shanduy`)
                 if (anu.error) return reply(anu.error)
-                infomp3 = `*⌜Cancion Encontrada ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP3 ⚠*\n\n_*Servicio proveido por 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_`
+                infomp3 = `*⌜Cancion Encontrada ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ESPERE ENVIANDO SU ARCHIVO MP3 ⚠*\n\n_*Servicio proveido por 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -1470,7 +1477,7 @@ break
                   reply(mess.only.insta)
                 })
                 a = res[0]
-                result = `*⌜Post Encontrado ✅⌟*\n◉*Titulo:* ${a.judul} \n◉ *Fuente:* ${a.source} \n◉ *Tamaño:* ${a.size} \n◉ *Calidad:* ${a.quality} \n◉ *Tipo:* ${a.type} \n◉ *Nombre del archivo:* ${a.judul}.${a.type}\n\n*ESPERE ENVIANDO SU POST ⚠*\n\n_*Servicio proveido por 𝑶𝒄𝒉𝒐𝒂⁶⁶⁶*_`
+                result = `*⌜Post Encontrado ✅⌟*\n◉*Titulo:* ${a.judul} \n◉ *Fuente:* ${a.source} \n◉ *Tamaño:* ${a.size} \n◉ *Calidad:* ${a.quality} \n◉ *Tipo:* ${a.type} \n◉ *Nombre del archivo:* ${a.judul}.${a.type}\n\n*ESPERE ENVIANDO SU POST ⚠*\n\n_*Servicio proveido por 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩`
                 sendFileFromUrl(a.thumb, image, {caption: result, quoted: sam})
                 sendFileFromUrl(a.link, video, { mimetype: 'video/mp4',quoted: sam, filename: `${a.judul}.${a.type}`})
                 break
