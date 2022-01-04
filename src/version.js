@@ -1,15 +1,13 @@
 const version = (prefix, pushname) => {
     return `
-*XavyBot by Ochoa*
+*DragonBot by Dragón*
 
-*Actualizado:* 24 de Diciembre del 2021
+*Actualizado:* 4 de enero del 2022
 *Versión actual:* 4.0
-*Ofrecida por:* Ochoa™
+*Ofrecida por:* Dragon™
 
 
 *INFORME*
-
-FELIS NABIDA, TEAMO
 
 Si no funciona el comando !play o !play2 revisa el blog del bot y mira la version que poses 
 Ya que ire cambiando mi apikey de mi bot para que siga en funcionamiento
@@ -18,7 +16,7 @@ Si vez a alguien que robo mi bot comunicate conmigo con el comando !creador
 
 
 
-_*by Ochoa*_
+By Dragón
 `
 
 }
