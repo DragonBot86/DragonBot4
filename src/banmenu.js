@@ -23,7 +23,7 @@ Ejemplo: !desban @xxxxxxx
 
 ══════════════
 
-_*by Ochoa*_
+ 𝙗𝙮 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩
 
 `
 
