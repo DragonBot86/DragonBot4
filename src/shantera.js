@@ -47,7 +47,7 @@ Enano
 
 _*Ojito escribe tal y como esta en el mensaje*_
 
-ву Ochoa`
+ву 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩`
 
 }
 
