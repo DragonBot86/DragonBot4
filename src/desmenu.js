@@ -35,7 +35,7 @@ ${prefix}ytmp4 www.youtube.com/xxxxxxxx
     
 _!play y !play2 tiene un limite de 2000 canciones en el server, si llega a su limite se restablecera dentro de 24 horas_
      
-_*by Ochoa*_
+ 𝙗𝙮 𝕯𝖗𝖆𝖌𝖔𝖓ꫂ▸ᷫ ᷰ ⷭ ⷦ⁩⁩
 `
 
 }
